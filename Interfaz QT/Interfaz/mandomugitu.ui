@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mandomugitu</class>
+ <widget class="QMainWindow" name="Mandomugitu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Laguntza</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pausaButton">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Ikonoak.qrc">
+      <normaloff>:/Ikonoak/pause.gif</normaloff>:/Ikonoak/pause.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>180</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Ikonoak.qrc">
+      <normaloff>:/Ikonoak/stop.gif</normaloff>:/Ikonoak/stop.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hasiButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Ikonoak.qrc">
+      <normaloff>:/Ikonoak/play.gif</normaloff>:/Ikonoak/play.gif</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="berrabiaraziButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>110</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Ikonoak.qrc">
+      <normaloff>:/Ikonoak/restart.png</normaloff>:/Ikonoak/restart.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="atzeraButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Ikonoak.qrc">
+      <normaloff>:/Ikonoak/atzera.png</normaloff>:/Ikonoak/atzera.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>40</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>true</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Wiimote-a Mugituz</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLaguntza">
+    <property name="title">
+     <string>Laguntza</string>
+    </property>
+    <addaction name="actionManeiua"/>
+    <addaction name="actionKontrolak"/>
+   </widget>
+   <addaction name="menuLaguntza"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionManeiua">
+   <property name="text">
+    <string>Maneiua</string>
+   </property>
+  </action>
+  <action name="actionKontrolak">
+   <property name="text">
+    <string>Kontrolak</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Ikonoak.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>atzeraButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Mandomugitu</receiver>
+   <slot>showNagusia()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showNagusia()</slot>
+  <slot>showAzalpena()</slot>
+ </slots>
+</ui>

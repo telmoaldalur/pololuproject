@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Ikonoak">
+        <file>pause.gif</file>
+        <file>play.gif</file>
+        <file>stop.gif</file>
+        <file>Wiimote.gif</file>
+        <file>restart.png</file>
+        <file>atzera.png</file>
+        <file>Itxi.png</file>
+    </qresource>
+</RCC>
